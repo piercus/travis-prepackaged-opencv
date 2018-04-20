@@ -1,0 +1,27 @@
+{
+  "name": "travis-prepackaged-opencv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "release": {
+    "publish": [
+      {
+        "path": "@semantic-release/github",
+        "assets": [
+          {
+            "path": "build/*",
+            "label": "opencv-built"
+          }
+        ]
+      }
+    ]
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "semantic-release": "^15.1.7"
+  }
+}
