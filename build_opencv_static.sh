@@ -1,3 +1,4 @@
+set -e
 
 export NODE_VERSION=6.10.3
 export OPENCV_VERSION=2.4.13.5
